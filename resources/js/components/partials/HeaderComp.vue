@@ -33,13 +33,36 @@ export default {
 nav.navbar {
     height: 60px;
     background-color: #192227;
-    .nav-item a.nav-link{
+    .nav-item a{
         color: white;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin: 20px;
+        margin-bottom: 10px;
+        position: relative;
         &:hover{
-            text-decoration: underline;
+            text-decoration: none;
+            color: red;
+            &::after{
+                background-color: red;
+            }
         }
         &.active{
-            color:#4ca7d8;
+            color: red;
+            &::after{
+                background-color: red;
+            }
+        }
+        &::after{
+            content: ' ';
+            display: table;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%);
+            height: 3px;
+            width: 80%;
+            // background-color: red;
         }
     }
 }
