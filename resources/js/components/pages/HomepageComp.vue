@@ -25,7 +25,8 @@ export default {
 
 .jumbo{
     background-image: url('../../../../public/img/bg_home.png');
-    height: calc(100vh - 55px);
+    height: 110vh;
+    margin-top: -95px;
     color: white;
     text-transform: uppercase;
 

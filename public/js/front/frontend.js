@@ -2294,7 +2294,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("header", [_c("nav", {
+  return _c("header", {}, [_c("nav", {
     staticClass: "navbar navbar-expand-lg"
   }, [_c("div", {
     staticClass: "container"
@@ -2323,7 +2323,13 @@ var render = function render() {
         name: "menu"
       }
     }
-  }, [_vm._v("Pizze")])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("Pizze")])], 1), _vm._v(" "), _c("img", {
+    staticClass: "logo",
+    attrs: {
+      src: __webpack_require__(/*! ../../../../public/img/logo.png */ "./public/img/logo.png"),
+      alt: "logo"
+    }
+  }), _vm._v(" "), _c("li", {
     staticClass: "nav-item"
   }, [_c("router-link", {
     staticClass: "nav-link",
@@ -2382,7 +2388,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".jumbo[data-v-deb96b9a] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../../public/img/bg_home.png */ "./public/img/bg_home.png")) + ");\n  height: calc(100vh - 55px);\n  color: white;\n  text-transform: uppercase;\n}\n.jumbo .title[data-v-deb96b9a] {\n  font-size: 6rem;\n  font-weight: bold;\n  margin-bottom: 80px;\n}\n.jumbo .subtitle[data-v-deb96b9a] {\n  font-size: 1.5rem;\n}\n.jumbo a[data-v-deb96b9a] {\n  text-transform: uppercase;\n  background-color: rgb(107, 179, 0);\n  color: white;\n  font-weight: bold;\n  padding: 15px 20px;\n  transition: all 0.3s;\n}\n.jumbo a[data-v-deb96b9a]:hover {\n  text-decoration: none;\n  background-color: transparent;\n  border: 1px solid rgb(107, 179, 0);\n}", ""]);
+exports.push([module.i, ".jumbo[data-v-deb96b9a] {\n  background-image: url(" + escape(__webpack_require__(/*! ../../../../public/img/bg_home.png */ "./public/img/bg_home.png")) + ");\n  height: 110vh;\n  margin-top: -95px;\n  color: white;\n  text-transform: uppercase;\n}\n.jumbo .title[data-v-deb96b9a] {\n  font-size: 6rem;\n  font-weight: bold;\n  margin-bottom: 80px;\n}\n.jumbo .subtitle[data-v-deb96b9a] {\n  font-size: 1.5rem;\n}\n.jumbo a[data-v-deb96b9a] {\n  text-transform: uppercase;\n  background-color: rgb(107, 179, 0);\n  color: white;\n  font-weight: bold;\n  padding: 15px 20px;\n  transition: all 0.3s;\n}\n.jumbo a[data-v-deb96b9a]:hover {\n  text-decoration: none;\n  background-color: transparent;\n  border: 1px solid rgb(107, 179, 0);\n}", ""]);
 
 // exports
 
@@ -2439,7 +2445,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "nav.navbar[data-v-494e1ffe] {\n  height: 60px;\n  background-color: #192227;\n}\nnav.navbar .nav-item a[data-v-494e1ffe] {\n  color: white;\n  text-transform: uppercase;\n  font-size: 0.9rem;\n  margin: 20px;\n  margin-bottom: 10px;\n  position: relative;\n}\nnav.navbar .nav-item a[data-v-494e1ffe]:hover {\n  text-decoration: none;\n  color: red;\n}\nnav.navbar .nav-item a[data-v-494e1ffe]:hover::after {\n  background-color: red;\n}\nnav.navbar .nav-item a.active[data-v-494e1ffe] {\n  color: red;\n}\nnav.navbar .nav-item a.active[data-v-494e1ffe]::after {\n  background-color: red;\n}\nnav.navbar .nav-item a[data-v-494e1ffe]::after {\n  content: \" \";\n  display: table;\n  position: absolute;\n  bottom: -5px;\n  left: 50%;\n  transform: translate(-50%);\n  height: 3px;\n  width: 80%;\n}", ""]);
+exports.push([module.i, "nav.navbar[data-v-494e1ffe] {\n  background-color: rgba(25, 34, 39, 0.6352941176);\n}\nnav.navbar .logo[data-v-494e1ffe] {\n  width: 110px;\n}\nnav.navbar .nav-item a[data-v-494e1ffe] {\n  color: white;\n  font-weight: bold;\n  text-transform: uppercase;\n  font-size: 0.9rem;\n  margin: 20px;\n  margin-bottom: 10px;\n  position: relative;\n}\nnav.navbar .nav-item a[data-v-494e1ffe]:hover {\n  text-decoration: none;\n  color: red;\n}\nnav.navbar .nav-item a[data-v-494e1ffe]:hover::after {\n  background-color: red;\n}\nnav.navbar .nav-item a.active[data-v-494e1ffe] {\n  color: red;\n}\nnav.navbar .nav-item a.active[data-v-494e1ffe]::after {\n  background-color: red;\n}\nnav.navbar .nav-item a[data-v-494e1ffe]::after {\n  content: \" \";\n  display: table;\n  position: absolute;\n  bottom: -15px;\n  left: 50%;\n  transform: translate(-50%);\n  height: 3px;\n  width: 80%;\n}", ""]);
 
 // exports
 
@@ -18162,6 +18168,17 @@ module.exports = g;
 /***/ (function(module, exports) {
 
 module.exports = "/images/bg_home.png?e84f3490860505e379e5220e9096485d";
+
+/***/ }),
+
+/***/ "./public/img/logo.png":
+/*!*****************************!*\
+  !*** ./public/img/logo.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo.png?e0f3ccb9aadbb0043f1e3af1732d2938";
 
 /***/ }),
 
